@@ -11,6 +11,12 @@ config_version=5
 [application]
 
 config/name="Viaje Gramatical"
-run/main_scene="res://scenes/menu.tscn"
+run/main_scene="res://levels/level_1.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=960
+window/size/viewport_height=540
+window/stretch/mode="viewport"
