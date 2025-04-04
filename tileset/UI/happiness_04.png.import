@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqcddqlgj2o3i"
-path="res://.godot/imported/output_tileset.png-239517a392f457a9f2f6a407f290ae1d.ctex"
+uid="uid://d0h2urt6bcpi2"
+path="res://.godot/imported/happiness_04.png-5de5b0701375a80598181fc0b475b530.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tileset/output_tileset.png"
-dest_files=["res://.godot/imported/output_tileset.png-239517a392f457a9f2f6a407f290ae1d.ctex"]
+source_file="res://tileset/UI/happiness_04.png"
+dest_files=["res://.godot/imported/happiness_04.png-5de5b0701375a80598181fc0b475b530.ctex"]
 
 [params]
 

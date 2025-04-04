@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqcddqlgj2o3i"
-path="res://.godot/imported/output_tileset.png-239517a392f457a9f2f6a407f290ae1d.ctex"
+uid="uid://67obhy0uw6qs"
+path="res://.godot/imported/stopwatch.png-a48def7d29e9b0e6116822164ee5feb4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tileset/output_tileset.png"
-dest_files=["res://.godot/imported/output_tileset.png-239517a392f457a9f2f6a407f290ae1d.ctex"]
+source_file="res://tileset/UI/stopwatch.png"
+dest_files=["res://.godot/imported/stopwatch.png-a48def7d29e9b0e6116822164ee5feb4.ctex"]
 
 [params]
 

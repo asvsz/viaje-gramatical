@@ -10,7 +10,16 @@ config_version=5
 
 [application]
 
-config/name="Viaje Gramatical"
-run/main_scene="res://scenes/menu.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
-config/icon="res://icon.svg"
+run/main_scene="res://level_1.tscn"
+config/features=PackedStringArray("4.3")
+
+[input]
+
+enter={
+"deadzone": 0.5,
+"events": []
+}
+"  space"={
+"deadzone": 0.5,
+"events": []
+}
