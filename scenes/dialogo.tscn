@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cfmsv1hlk8634"]
+[gd_scene load_steps=5 format=3 uid="uid://cfmsv1hlk8634"]
 
 [ext_resource type="Texture2D" uid="uid://yr1eukv2shxb" path="res://download.jpeg" id="1_5h5x1"]
+[ext_resource type="Script" path="res://scenes/dialogo.gd" id="1_u8arc"]
 [ext_resource type="FontFile" uid="uid://c2lnap81w1oky" path="res://font/EquipmentPro.ttf" id="2_6csgj"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_rngg0"]
@@ -9,7 +10,7 @@ font_size = 30
 font_color = Color(0.356863, 0.101961, 0.0392157, 1)
 shadow_color = Color(0.901961, 0.635294, 0.380392, 1)
 
-[node name="Dialogo" type="Control"]
+[node name="Dialogo" type="Control" node_paths=PackedStringArray("_name", "_dialog", "_faceset")]
 layout_mode = 3
 anchors_preset = 12
 anchor_top = 1.0
@@ -22,6 +23,10 @@ offset_bottom = -20.0
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_vertical = 8
+script = ExtResource("1_u8arc")
+_name = NodePath("ColorRect/HBoxContainer/VBoxContainer/Label")
+_dialog = NodePath("ColorRect/HBoxContainer/VBoxContainer/RichTextLabel")
+_faceset = NodePath("ColorRect/HBoxContainer/ColorRect/TextureRect")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
