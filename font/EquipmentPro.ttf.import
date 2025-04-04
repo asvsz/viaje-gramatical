@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://uaieqv3j8sft"
-path="res://.godot/imported/RevMiniPixel.ttf-42e2c3ad0c0db603b387ad67b47a7bd8.fontdata"
+uid="uid://c2lnap81w1oky"
+path="res://.godot/imported/EquipmentPro.ttf-2985f266c52aa178713ee22452fd3501.fontdata"
 
 [deps]
 
-source_file="res://font/RevMiniPixel.ttf"
-dest_files=["res://.godot/imported/RevMiniPixel.ttf-42e2c3ad0c0db603b387ad67b47a7bd8.fontdata"]
+source_file="res://font/EquipmentPro.ttf"
+dest_files=["res://.godot/imported/EquipmentPro.ttf-2985f266c52aa178713ee22452fd3501.fontdata"]
 
 [params]
 

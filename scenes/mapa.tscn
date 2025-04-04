@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=3 uid="uid://dqgkuqajitqq4"]
 
-[ext_resource type="Texture2D" uid="uid://bqcddqlgj2o3i" path="res://tileset/output_tileset.png" id="1_474hk"]
-[ext_resource type="Theme" uid="uid://dxxu4grvd0sil" path="res://default-button.tres" id="3_y8wgi"]
+[ext_resource type="Texture2D" uid="uid://bqcddqlgj2o3i" path="res://tileset/output_tileset.png" id="1_3r42o"]
+[ext_resource type="Theme" uid="uid://dxxu4grvd0sil" path="res://default-button.tres" id="2_hb2k3"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_e5fu2"]
 load_path = "res://.godot/imported/output_tileset.png-239517a392f457a9f2f6a407f290ae1d.ctex"
@@ -4041,7 +4041,7 @@ sources/0 = SubResource("TileSetAtlasSource_72qfm")
 sources/1 = SubResource("TileSetAtlasSource_cvhcn")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_453wp"]
-texture = ExtResource("1_474hk")
+texture = ExtResource("1_3r42o")
 texture_region_size = Vector2i(10, 10)
 0:0/0 = 0
 1:0/0 = 0
@@ -9623,7 +9623,7 @@ tile_size = Vector2i(10, 10)
 sources/3 = SubResource("TileSetAtlasSource_453wp")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7elpj"]
-texture = ExtResource("1_474hk")
+texture = ExtResource("1_3r42o")
 texture_region_size = Vector2i(10, 10)
 0:0/0 = 0
 1:0/0 = 0
@@ -15205,7 +15205,7 @@ tile_size = Vector2i(10, 10)
 sources/7 = SubResource("TileSetAtlasSource_7elpj")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wsljc"]
-texture = ExtResource("1_474hk")
+texture = ExtResource("1_3r42o")
 texture_region_size = Vector2i(10, 10)
 0:0/0 = 0
 1:0/0 = 0
@@ -20819,5 +20819,5 @@ offset_left = 126.0
 offset_top = 107.0
 offset_right = 272.0
 offset_bottom = 131.0
-theme = ExtResource("3_y8wgi")
+theme = ExtResource("2_hb2k3")
 text = "nível 1: Casa"
