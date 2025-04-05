@@ -9,12 +9,6 @@ var data: Dictionary = {}
 @export var _name: Label = null
 @export var _dialog: RichTextLabel = null
 @export var _faceset: TextureRect = null
-<<<<<<< HEAD
-
-func _ready() -> void:
-	_initialize_dialog()
-
-=======
 @export var _choices: VBoxContainer = null
 @export var _audio_player: AudioStreamPlayer = null
 @export var _replay_button: Button = null
@@ -26,7 +20,6 @@ func _ready() -> void:
 	_initialize_dialog()
 
 
->>>>>>> 638664b (feat: alterações trazidas da branch level1)
 func _process(_delta: float) -> void:
 	if Input.is_action_pressed("ui_accept") and _dialog.visible_ratio < 1:
 		_step = 0.01
@@ -35,34 +28,23 @@ func _process(_delta: float) -> void:
 	_step = 0.05
 
 	if Input.is_action_just_pressed("ui_accept"):
-<<<<<<< HEAD
-=======
 		# Impede o avanço se estiver mostrando escolhas
 		if _choices.visible:
 			return
 
->>>>>>> 638664b (feat: alterações trazidas da branch level1)
 		_id += 1
 		if _id == data.size():
 			queue_free()
 			return
 		_initialize_dialog()
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 638664b (feat: alterações trazidas da branch level1)
 func _initialize_dialog() -> void:
 	if not data.has(_id):
 		print("ID inválido:", _id)
 		queue_free()
 		return
 
-<<<<<<< HEAD
-	_name.text = data[_id]["title"]
-	_dialog.text = data[_id]["dialog"]
-	_faceset.texture = load(data[_id]["faceset"])
-=======
 	var dialog_data = data[_id]
 	_name.text = dialog_data["title"]
 	_dialog.text = dialog_data["dialog"]
@@ -73,14 +55,11 @@ func _initialize_dialog() -> void:
 		var audio_stream = load(dialog_data["audio"])
 		_audio_player.stream = audio_stream
 		_audio_player.play()
->>>>>>> 638664b (feat: alterações trazidas da branch level1)
 
 	_dialog.visible_characters = 0
 	while _dialog.visible_ratio < 1:
 		await get_tree().create_timer(_step).timeout
 		_dialog.visible_characters += 1
-<<<<<<< HEAD
-=======
 
 	if dialog_data.has("choices"):
 		_show_choices(dialog_data["choices"])
@@ -147,4 +126,3 @@ func _on_choice_pressed(is_correct: bool) -> void:
 
 func _on_button_pressed() -> void:
 	_audio_player.play()
->>>>>>> 638664b (feat: alterações trazidas da branch level1)

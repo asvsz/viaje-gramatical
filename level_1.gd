@@ -7,15 +7,6 @@ var _dialog_data: Dictionary = {
 	0: {
 		"faceset": "res://download.jpeg",
 		"dialog": "Olá, sejam bem-vindos!",
-<<<<<<< HEAD
-		"title": "Paladino"
-	},
-	1: {
-		"faceset": "res://download.jpeg",
-		"dialog": "Estamos prestes a começar nossa jornada.",
-		"title": "Paladino"
-	},
-=======
 		"title": "Paladino",
 		"choices": [
 			{"text": "Londres", "correct": false},
@@ -33,7 +24,6 @@ var _dialog_data: Dictionary = {
 		{"text": "Outra opção", "correct": false}
 	]
 },
->>>>>>> 638664b (feat: alterações trazidas da branch level1)
 	2: {
 		"faceset": "res://download.jpeg",
 		"dialog": "Tenham coragem e fé!",
