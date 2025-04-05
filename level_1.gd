@@ -7,6 +7,7 @@ var _dialog_data: Dictionary = {
 	0: {
 		"faceset": "res://download.jpeg",
 		"dialog": "Olá, sejam bem-vindos!",
+<<<<<<< HEAD
 		"title": "Paladino"
 	},
 	1: {
@@ -14,6 +15,25 @@ var _dialog_data: Dictionary = {
 		"dialog": "Estamos prestes a começar nossa jornada.",
 		"title": "Paladino"
 	},
+=======
+		"title": "Paladino",
+		"choices": [
+			{"text": "Londres", "correct": false},
+			{"text": "Paris", "correct": true},
+			{"text": "Berlim", "correct": false}
+		]
+	},
+	1: {
+	"faceset": "res://download.jpeg",
+	"title": "Narrador",
+	"dialog": "Escute com atenção...",
+	"audio": "res://audios/switch14.wav",
+	"choices": [
+		{"text": "A opção correta", "correct": true},
+		{"text": "Outra opção", "correct": false}
+	]
+},
+>>>>>>> 638664b (feat: alterações trazidas da branch level1)
 	2: {
 		"faceset": "res://download.jpeg",
 		"dialog": "Tenham coragem e fé!",

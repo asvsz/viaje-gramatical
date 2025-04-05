@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=2 format=3 uid="uid://cvvtqimvueiw6"]
+=======
+[gd_scene load_steps=2 format=3 uid="uid://bdy8vyugb6ush"]
+>>>>>>> 638664b (feat: alterações trazidas da branch level1)
 
 [ext_resource type="Texture2D" uid="uid://c3su5ex3nq37s" path="res://tileset/UI/arrow_right.png" id="4_1dl4h"]
 

@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 [gd_scene load_steps=9 format=3 uid="uid://ds5sngjeb164n"]
 
 [ext_resource type="Texture2D" uid="uid://wfsdt4ox4v5i" path="res://font/Download premium image of Alps cut pixel wilderness landscape mountain_ by nywthn about background, cloud, grass, scenery, and plant 14154757.jpeg" id="1_gjaiv"]
 [ext_resource type="Texture2D" uid="uid://bqcddqlgj2o3i" path="res://tileset/output_tileset.png" id="2_6tm0m"]
 [ext_resource type="Texture2D" uid="uid://dl68p6nu8a23k" path="res://tileset/SpriteSheet.png" id="3_525ac"]
+=======
+[gd_scene load_steps=9 format=3 uid="uid://dcwpjwmieaymc"]
+
+[ext_resource type="Texture2D" path="res://font/Download premium image of Alps cut pixel wilderness landscape mountain_ by nywthn about background, cloud, grass, scenery, and plant 14154757.jpeg" id="1_gjaiv"]
+[ext_resource type="Texture2D" uid="uid://bqcddqlgj2o3i" path="res://tileset/output_tileset.png" id="2_6tm0m"]
+[ext_resource type="Texture2D" path="res://tileset/SpriteSheet.png" id="3_525ac"]
+>>>>>>> 638664b (feat: alterações trazidas da branch level1)
 [ext_resource type="Theme" uid="uid://dxxu4grvd0sil" path="res://default-button.tres" id="4_4jfoi"]
 [ext_resource type="Script" path="res://levels/button-history.gd" id="5_q658h"]
 
