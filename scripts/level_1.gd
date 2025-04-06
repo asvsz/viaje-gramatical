@@ -157,7 +157,6 @@ var _dialog_data: Dictionary = {
 	}
 }
 }
-
 @export_category("Objects")
 @export var _hud: CanvasLayer = null
 
