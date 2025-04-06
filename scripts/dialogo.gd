@@ -28,10 +28,14 @@ func _ready() -> void:
 	_choices = $ColorRect/HBoxContainer/VBoxContainer/VBoxContainer
 	_audio_player = $ColorRect/HBoxContainer/VBoxContainer/AudioStreamPlayer
 	_text_input = $ColorRect/HBoxContainer/VBoxContainer/TextEdit
-
+	
+	_replay_button.custom_minimum_size = Vector2(90, 32)
+	_replay_button.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+	_replay_button.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+	
 	_choices.alignment = BoxContainer.ALIGNMENT_CENTER
 	_choices.add_theme_constant_override("separation", 10)
-
+	
 	# Verifica se a conexão já existe antes de conectar
 	if not _replay_button.pressed.is_connected(_on_button_pressed):
 		_replay_button.pressed.connect(_on_button_pressed)
@@ -98,7 +102,7 @@ func _initialize_dialog() -> void:
 		_audio_player.stream = audio_stream
 		_audio_player.play()
 		_replay_button.visible = true
-		await _audio_player.finished
+		
 
 	if dialog_data.has("text_input"):
 		_text_input.visible = true
