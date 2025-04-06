@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cflpjbmmpu5ha"]
+
+[ext_resource type="Texture2D" uid="uid://wfsdt4ox4v5i" path="res://font/Download premium image of Alps cut pixel wilderness landscape mountain_ by nywthn about background, cloud, grass, scenery, and plant 14154757.jpeg" id="1_b0uka"]
+[ext_resource type="PackedScene" uid="uid://bpo5nrkejx7ev" path="res://scenes/menu.tscn" id="2_i1b6d"]
+
+[node name="Main" type="Node2D"]
+
+[node name="DownloadPremiumImageOfAlpsCutPixelWildernessLandscapeMountainByNywthnAboutBackground,Cloud,Grass,Scenery,AndPlant14154757" type="Sprite2D" parent="."]
+position = Vector2(578, 326.5)
+scale = Vector2(1.57065, 1.32587)
+texture = ExtResource("1_b0uka")
+
+[node name="Menu" parent="." instance=ExtResource("2_i1b6d")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

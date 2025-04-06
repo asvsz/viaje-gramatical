@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dtavsr500sr46"
+path="res://.godot/imported/Audio itinerário.wav-331bd9c7598b8f05429d0e28a8abcd29.sample"
+
+[deps]
+
+source_file="res://tileset/Audio itinerário.wav"
+dest_files=["res://.godot/imported/Audio itinerário.wav-331bd9c7598b8f05429d0e28a8abcd29.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
