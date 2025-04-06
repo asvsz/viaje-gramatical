@@ -19,6 +19,9 @@ var _awaiting_input: bool = false
 @export var _text_input: TextEdit
 @export var _response_input: String = ""
 
+@onready var _score_label = $ScoreContainer/ScoreLabel
+var initial_score = 0
+
 func _ready() -> void:
 	_faceset_container = $ColorRect/HBoxContainer/ColorRect
 	_replay_button = $ColorRect/HBoxContainer/VBoxContainer/Button
@@ -130,21 +133,35 @@ func _show_choices(choices_data: Array) -> void:
 			btn.disabled = false
 			btn.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
 
-			# Desconecta conexões anteriores para evitar duplicação
+			# Desconecta conexões antigas
 			if btn.pressed.is_connected(_on_choice_button_pressed):
 				btn.pressed.disconnect(_on_choice_button_pressed)
 
-			var is_correct = choices_data[i].get("correct", false)
-			btn.pressed.connect(_on_choice_button_pressed.bind(is_correct))
+			# Nova lógica: passa o tipo da escolha
+			var choice = choices_data[i]
+			var has_feedback = not choice.get("neutral", false)
+			var is_correct = choice.get("correct", false)
+
+			btn.pressed.connect(_on_choice_button_pressed.bind(has_feedback, is_correct))
 		else:
 			btn.hide()
+		
 
-func _on_choice_button_pressed(is_correct: bool) -> void:
+func _on_choice_button_pressed(has_feedback: bool, is_correct: bool) -> void:
 	_choices.visible = false
 	_waiting_for_choice = false
-	await _show_feedback(is_correct)
+
+	if has_feedback:
+		await _show_feedback(is_correct)
+	else:
+		_id += 1
+		if _id == data.size():
+			queue_free()
+			return
+		_initialize_dialog()
 
 func _show_feedback(is_correct: bool) -> void:
+	update_socre(is_correct)
 	_dialog.bbcode_enabled = true
 	_dialog.text = "[center][color=green]¡Bien! ¡Sigamos adelante![/color][/center]" if is_correct else "[center][color=red]Qué lástima. Sigamos adelante[/color][/center]"
 	_dialog.visible_characters = 0
@@ -171,3 +188,13 @@ func _show_feedback(is_correct: bool) -> void:
 func _on_button_pressed() -> void:
 	if _audio_player.stream:
 		_audio_player.play()
+
+func update_socre(is_correct: bool) -> void:
+	if is_correct:
+		initial_score += 10
+		_score_label.text = "Puntuación: %d" % initial_score
+	else:
+		if initial_score > 0:
+			initial_score -= 10
+			_score_label.text = "Puntuación: %d" % initial_score
+		

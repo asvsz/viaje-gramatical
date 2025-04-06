@@ -9,7 +9,7 @@ var _dialog_data: Dictionary = {
 		"title": "Paladino",
 		"dialog": "¡Hola, viajero! ¡Bienvenido a Viaje Gramatical, una aventura interactiva por los increíbles países de habla hispana! ¿Estás listo?",
 		"choices": [
-			{"text": "¡Estoy listo para empezar!", "correct": true}
+			{"text": "¡Estoy listo para empezar!", "neutral": true}
 		]
 	},
 	1: {
@@ -143,18 +143,18 @@ var _dialog_data: Dictionary = {
 	},
 	20: {
 	"title": "Q10",
-	"question": "¿Qué tipo de documento se describe en el audio?",
+	"dialog": "¿Qué tipo de documento se describe en el audio?",
 	"choices": [
 		{"text": "A) Una reserva de hotel", "correct": false},
 		{"text": "B) Un mapa turístico", "correct": false},
 		{"text": "C) Un itinerario de viaje (con fechas y actividades)", "correct": true}
 	],
-	"audio": "res://tileset/Audio itinerário.wav",
-	"audio_button_settings": {
-		"visible": true,
-		"text": "Escuchar Audio",
-		"hint": "(Opcional: escuche para confirmar su respuesta)"
-	}
+	#"audio": "res://tileset/Audio itinerário.wav",
+	#"audio_button_settings": {
+		#"visible": true,
+		#"text": "Escuchar Audio",
+		#"hint": "(Opcional: escuche para confirmar su respuesta)"
+	#}
 }
 }
 

@@ -2914,7 +2914,6 @@ texture = SubResource("CompressedTexture2D_e5fu2")
 54:62/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cdrqj"]
-load_path = "res://.godot/imported/Interiors_free_16x16.png-ef2bce68b747e9f536c817776ba506b4.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cvhcn"]
 texture = SubResource("CompressedTexture2D_cdrqj")

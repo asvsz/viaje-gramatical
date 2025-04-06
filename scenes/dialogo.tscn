@@ -132,4 +132,24 @@ size_flags_vertical = 3
 theme = ExtResource("4_c3u86")
 placeholder_text = "Digite sua reposta aqui"
 
+[node name="ScoreContainer" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -197.0
+offset_top = -81.0
+offset_right = 21.0
+offset_bottom = -41.0
+color = Color(0.635294, 0.356863, 0.168627, 1)
+
+[node name="ScoreLabel" type="Label" parent="ScoreContainer"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 5.0
+offset_right = 203.0
+offset_bottom = 47.0
+theme_override_colors/font_color = Color(0.901961, 0.635294, 0.380392, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_6csgj")
+theme_override_font_sizes/font_size = 36
+text = "Puntuación: 0"
+
 [connection signal="pressed" from="ColorRect/HBoxContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
