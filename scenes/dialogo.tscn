@@ -117,12 +117,15 @@ size_flags_vertical = 3
 
 [node name="Button" type="Button" parent="ColorRect/HBoxContainer/VBoxContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("4_c3u86")
 
 [node name="Button2" type="Button" parent="ColorRect/HBoxContainer/VBoxContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("4_c3u86")
 
 [node name="Button3" type="Button" parent="ColorRect/HBoxContainer/VBoxContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("4_c3u86")
 
 [node name="TextEdit" type="TextEdit" parent="ColorRect/HBoxContainer/VBoxContainer"]
 visible = false
