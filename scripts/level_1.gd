@@ -4,6 +4,7 @@ class_name Level
 const _DIALOGO: PackedScene = preload("res://scenes/dialogo.tscn")
 
 var _dialog_data: Dictionary = {
+	
 	0: {
 		"faceset": "res://download.jpeg",
 		"title": "Paladino",
@@ -143,18 +144,17 @@ var _dialog_data: Dictionary = {
 	},
 	20: {
 	"title": "Q10",
-	"dialog": "¿Qué tipo de documento se describe en el audio?",
 	"choices": [
 		{"text": "A) Una reserva de hotel", "correct": false},
 		{"text": "B) Un mapa turístico", "correct": false},
 		{"text": "C) Un itinerario de viaje (con fechas y actividades)", "correct": true}
 	],
-	#"audio": "res://tileset/Audio itinerário.wav",
-	#"audio_button_settings": {
-		#"visible": true,
-		#"text": "Escuchar Audio",
-		#"hint": "(Opcional: escuche para confirmar su respuesta)"
-	#}
+	"audio": "res://tileset/Audio itinerário.wav",
+	"audio_button_settings": {
+		"visible": true,
+		"text": "Escuchar Audio",
+		"hint": "(Opcional: escuche para confirmar su respuesta)"
+	}
 }
 }
 @export_category("Objects")

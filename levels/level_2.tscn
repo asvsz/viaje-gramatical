@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxkuxlyp5253n"]
+
+[ext_resource type="Texture2D" uid="uid://wfsdt4ox4v5i" path="res://font/Download premium image of Alps cut pixel wilderness landscape mountain_ by nywthn about background, cloud, grass, scenery, and plant 14154757.jpeg" id="1_hc04k"]
+
+[node name="Level2" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 647.0
+texture = ExtResource("1_hc04k")
+
+[node name="HUD" type="CanvasLayer" parent="."]
