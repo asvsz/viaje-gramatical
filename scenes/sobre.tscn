@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5coiooadto1p"]
+
+[ext_resource type="Texture2D" uid="uid://wfsdt4ox4v5i" path="res://font/Download premium image of Alps cut pixel wilderness landscape mountain_ by nywthn about background, cloud, grass, scenery, and plant 14154757.jpeg" id="2_0whkt"]
+[ext_resource type="FontFile" uid="uid://c2lnap81w1oky" path="res://font/EquipmentPro.ttf" id="3_ofp22"]
+
+[node name="Sobre" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 647.0
+texture = ExtResource("2_0whkt")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 50.0
+offset_right = 907.0
+offset_bottom = 604.0
+color = Color(0.901961, 0.635294, 0.380392, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 26.0
+offset_top = 29.0
+offset_right = 695.0
+offset_bottom = 530.0
+theme_override_colors/default_color = Color(0.356863, 0.101961, 0.0392157, 1)
+theme_override_fonts/normal_font = ExtResource("3_ofp22")
+theme_override_font_sizes/normal_font_size = 25
+text = "Viajar é muito mais do que explorar o mundo; é também uma nova forma de se conectar. Em um universo repleto de possibilidades, viajantes curiosos e audazes se lançam em uma jornada fascinante pelos países de língua espanhola. Agora, chegou a sua vez de fazer parte dessa aventura linguística. Você foi convidado a embarcar em uma viagem gramatical interativa, onde seu verdadeiro passaporte para o sucesso será a habilidade de se comunicar em espanhol. A cada nova cidade que você visita, desafios reais surgiram, inspirados nas experiências cotidianas de um viajante: pedir pratos nos restaurantes, comprar passagens, solicitar direções, interagir com os moradores e muito mais. O jogo apresenta um mapa-mundi ilustrado que guiará sua jornada. Conforme você supera os obstáculos através de quizzes, diálogos interativos e decisões ao longo da narrativa, novos destinos se revelam, abrindo portas para culturas intrigantes, vocabulários novos e recompensas empolgantes. Cada etapa da sua viagem será uma oportunidade de aprendizado, repleta de diversão, dinamismo e surpresas."

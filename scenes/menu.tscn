@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bpo5nrkejx7ev"]
+[gd_scene load_steps=5 format=3 uid="uid://bpo5nrkejx7ev"]
 
 [ext_resource type="Theme" uid="uid://dxxu4grvd0sil" path="res://default-button.tres" id="1_mvl1n"]
 [ext_resource type="Texture2D" uid="uid://l4jtvo4rcp1g" path="res://VIAJE-.png" id="1_o7tgb"]
+[ext_resource type="Script" path="res://scenes/button_about.gd" id="3_esc7k"]
 
 [sub_resource type="GDScript" id="GDScript_prwfb"]
 script/source = "extends Button
@@ -54,5 +55,7 @@ script = SubResource("GDScript_prwfb")
 layout_mode = 2
 theme = ExtResource("1_mvl1n")
 text = "Acerca de"
+script = ExtResource("3_esc7k")
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonStart" to="MarginContainer/VBoxContainer/ButtonStart" method="_on_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonAbout" to="MarginContainer/VBoxContainer/ButtonAbout" method="_on_pressed"]
